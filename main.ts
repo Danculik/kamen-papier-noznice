@@ -9,6 +9,13 @@ input.onButtonPressed(Button.A, function () {
     }
     basic.pause(2000)
     basic.showString("K P N")
+    basic.showLeds(`
+        # . . . #
+        . # . # .
+        . . # . .
+        . # . # .
+        . # . # .
+        `)
 })
 input.onButtonPressed(Button.AB, function () {
     pocitac_vybral = randint(0, 2)
@@ -21,6 +28,13 @@ input.onButtonPressed(Button.AB, function () {
     }
     basic.pause(2000)
     basic.showString("K P N")
+    basic.showLeds(`
+        # . . # #
+        . # . # .
+        . . # . .
+        . # . # .
+        . # . # .
+        `)
 })
 input.onButtonPressed(Button.B, function () {
     pocitac_vybral = randint(0, 2)
@@ -33,9 +47,23 @@ input.onButtonPressed(Button.B, function () {
     }
     basic.pause(2000)
     basic.showString("K P N")
+    basic.showLeds(`
+        # . . # #
+        . # . # .
+        . . # . .
+        . # . # .
+        . # . # .
+        `)
 })
 let pocitac_vybral = 0
 basic.showString("K P N")
+basic.showLeds(`
+    # . . # #
+    . # . # .
+    . . # . .
+    . # . # .
+    . # . # .
+    `)
 basic.forever(function () {
 	
 })

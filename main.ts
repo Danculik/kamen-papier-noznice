@@ -54,21 +54,24 @@ input.onLogoEvent(TouchButtonEvent.Touched, function () {
     pocitac = 0
     clovek = 0
     basic.showString("NOVA HRA")
+    basic.showLeds(`
+        # . . . #
+        . # . # .
+        . . # . .
+        . # . # .
+        . # . # .
+        `)
     for (let index = 0; index < 5; index++) {
         while (auto == 0) {
             if (input.buttonIsPressed(Button.A)) {
                 kamen()
-                auto = 0
             } else if (input.buttonIsPressed(Button.B)) {
                 papier()
-                auto = 0
             } else if (input.buttonIsPressed(Button.AB)) {
                 noznice()
-                auto = 0
             }
         }
-        basic.showIcon(IconNames.Heart)
-        basic.pause(2000)
+        auto = 0
     }
     while (0 == 0) {
         basic.showString("TY")
@@ -82,6 +85,7 @@ input.onLogoEvent(TouchButtonEvent.Touched, function () {
             # . . . #
             . # # # .
             `)
+        basic.pause(1000)
     }
 })
 function ukaz_skore () {

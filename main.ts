@@ -1,6 +1,3 @@
-function ukaz_skore2 () {
-	
-}
 function papier () {
     pocitac_vybral = randint(0, 2)
     if (1 == pocitac_vybral) {
@@ -70,6 +67,8 @@ input.onLogoEvent(TouchButtonEvent.Touched, function () {
                 auto = 0
             }
         }
+        basic.showIcon(IconNames.Heart)
+        basic.pause(2000)
     }
     while (0 == 0) {
         basic.showString("TY")

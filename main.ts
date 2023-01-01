@@ -101,12 +101,13 @@ function ukaz_skore () {
         . # . # .
         `)
 }
-let auto = 0
 let pocitac_vybral = 0
+let auto = 0
 let clovek = 0
 let pocitac = 0
 pocitac = 0
 clovek = 0
+auto = 0
 basic.showString("K P N")
 basic.showLeds(`
     . # # # .
